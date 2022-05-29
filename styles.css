@@ -536,12 +536,173 @@ section{
 
 
 
+
+
+
+
+
+/*//About Page////////////*/
+.about-header{
+    background: linear-gradient(to right bottom, #3878F6, rgba(0, 0, 0, 0.5)), url('about-header.jpg') no-repeat center/cover;
+}
+
+.about-page-section{
+    max-width: 85%;
+    margin: 0 auto;
+    max-height: none;
+    min-height: 40vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-page-section p{
+    text-align: center;
+   font-size: 24px;
+    line-height: 2;
+}
+
+/*About 1*/
+.about-1{
+    background: #3878F6;
+    color: white;
+    min-height: auto;
+}
+
+.about-1 .title{
+    color: white;
+}
+
+
+.about-1-grid{
+    max-width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 60px;
+   
+    border-radius: 5px;
+
+}
+
+.about-1-grid.reverse .about-1-content{
+    order: 1;
+}
+
+.about-1-grid.reverse .about-1-img{
+    order: -1;
+}
+
+.about-1-content, .about-1-img{
+    position: relative;
+}
+
+.about-item-cover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: #3878F6;
+}
+
+
+
+.about-1-grid > *{
+    max-width: 100%;
+}
+
+.about-1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.about-1-content h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.about-1-content p{
+    font-size: 16px;
+    line-height: 2;
+}
+
+.about-1-img img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+
+/*////////////////Service Page/////////*/
+
+.service-header, .about-header{
+    min-height: 70vh;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('service4.webp') no-repeat center/cover;;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+.service-header-title, .about-header-title{
+    font-size: 50px;
+}
+
+/*Solutions*/
+.solutions-section{
+    background: linear-gradient(to right bottom, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.solutions-container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.solutions-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+   margin-bottom: 70px;
+}
+
+.solutions-item > *{
+    max-width: 100%;
+}
+
+
+.solutions-item img{
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.solutions-item.reverse .solutions-item img{
+    order: 1;
+}
+
+.solutions-item.reverse .solutions-content{
+    order: -1;
+}
+
+.solutions-content{
+    padding-top: 20px;
+}
+
+
+
+
+
 /*/////Home Page Media Queries*/
 
 @media(max-width:1200px){
-    /*body{
-        border: 5px solid purple;
-    }*/
+  
 
     .main-title{
         font-size: 60px;
@@ -564,6 +725,19 @@ section{
         font-size: 16px;
         line-height: 2;
     }
+
+
+
+
+    .about-1-content h1{
+        font-size: 22px;
+    
+    }
+    
+    .about-1-content p{
+        font-size: 14px;
+    }
+    
     
 
 }
@@ -622,7 +796,27 @@ section{
         max-width: 85%;
     }
    
+    /*About Page*/
+    .about-1-grid{
+        grid-template-columns: 1fr !important;
+    }
+
+    .about-1-grid .about-1-content{
+        order: 1;
+    }
     
+    .about-1-grid .about-1-img{
+        order: -1;
+    }
+
+    .about-1-content h1{
+        font-size: 24px;
+    
+    }
+    
+    .about-1-content p{
+        font-size: 16px;
+    }
     
 }
 
@@ -700,162 +894,15 @@ section{
         font-size: 14px;
     }
 
+
+    .about-page-section p{
+        font-size: 14px;
+    }
+
+
+    
+    .about-1-content p{
+        font-size: 12px;
+    }
    
-}
-
-
-
-
-/*//About Page////////////*/
-.about-header{
-    background: linear-gradient(to right bottom, #3878F6, rgba(0, 0, 0, 0.5)), url('about-header.jpg') no-repeat center/cover;
-}
-
-.about-page-section{
-    max-width: 85%;
-    margin: 0 auto;
-    max-height: none;
-    min-height: 40vh !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-page-section p{
-    text-align: center;
-   font-size: 24px;
-    line-height: 2;
-}
-
-/*About 1*/
-.about-1{
-    background: #3878F6;
-    color: white;
-    min-height: auto;
-}
-
-.about-1 .title{
-    color: white;
-}
-
-
-.about-1-grid{
-    max-width: 85%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 60px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-
-}
-
-.about-1-grid.reverse .about-1-content{
-    order: 1;
-}
-
-.about-1-grid.reverse .about-1-img{
-    order: -1;
-}
-
-.about-1-content, .about-1-img{
-    position: relative;
-}
-
-.about-item-cover{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background: #3878F6;
-}
-
-
-
-.about-1-grid > *{
-    max-width: 100%;
-}
-
-.about-1-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px;
-}
-
-.about-1-content h1{
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 24px;
-}
-
-.about-1-content p{
-    font-size: 18px;
-    line-height: 2;
-}
-
-.about-1-img img{
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-
-
-
-
-/*////////////////Service Page/////////*/
-
-.service-header, .about-header{
-    min-height: 70vh;
-    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('service4.webp') no-repeat center/cover;;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-
-
-.service-header-title, .about-header-title{
-    font-size: 50px;
-}
-
-/*Solutions*/
-.solutions-section{
-    background: linear-gradient(to right bottom, rgb(255, 255, 255), rgb(255, 255, 255));
-}
-
-.solutions-container{
-    max-width: 85%;
-    margin: 0 auto;
-}
-
-.solutions-item{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;
-   margin-bottom: 70px;
-}
-
-.solutions-item > *{
-    max-width: 100%;
-}
-
-
-.solutions-item img{
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-}
-
-.solutions-item.reverse .solutions-item img{
-    order: 1;
-}
-
-.solutions-item.reverse .solutions-content{
-    order: -1;
-}
-
-.solutions-content{
-    padding-top: 20px;
 }
