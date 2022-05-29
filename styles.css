@@ -630,6 +630,9 @@ section{
     /*body{
         border: 5px solid red;
     }*/
+    .header{
+        height: 75vh;
+    }
 
     .title{
         margin-bottom: 45px;
