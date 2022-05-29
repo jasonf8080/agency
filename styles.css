@@ -749,6 +749,8 @@ section{
 
     .header-container{
        flex-direction: column;
+       align-items: center;
+       text-align: center;
       
     }
 
@@ -756,6 +758,7 @@ section{
         display: block;
         max-width: 120px;
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+        align-self: center;
     }
 
     .header-content{
@@ -832,7 +835,7 @@ section{
     }
 
     .cursor, .cursor span{
-        visibility: hidden;
+        display: none;
     }
 
     .header-img-container{
@@ -880,13 +883,7 @@ section{
     }*/
 
 
-    .header-content .btn{
-        display: block;
-        max-width: 75%;
-        min-width: 75%;
-        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
-        align-self: center;
-    }
+   
     .main-title{
         margin-bottom: 16px;
         font-size: 32px;
