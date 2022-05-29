@@ -617,6 +617,11 @@ section{
         font-size: 16px;
     }
 
+    .services-grid{
+         row-gap: 18px;
+         column-gap: 18px;
+    } 
+
     .service-title{
         font-size: 14px;
     }
