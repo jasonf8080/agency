@@ -749,14 +749,12 @@ section{
 
     .header-container{
        flex-direction: column;
-       align-items: center;
-       text-align: center;
+      
     }
 
     .header-content .btn{
         display: block;
         max-width: 120px;
-       align-self: center;
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
     }
 
@@ -881,12 +879,12 @@ section{
 
     .main-title{
         margin-bottom: 16px;
-        font-size: 26px;
+        font-size: 28px;
     }
     
     .subtitle{
         margin-bottom: 20px;
-        font-size: 12px;
+        font-size: 13px;
     }
 
 
