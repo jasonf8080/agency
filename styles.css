@@ -503,7 +503,34 @@ section{
 
 /*Footer*/
 .footer{
+    min-height: auto !important;
     background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > *{
+    margin-bottom: 40px;
+}
+
+.footer-logo{
+    font-size: 30px;
+    color: white;
+}
+
+.social-icons-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    min-width: 300px;
+    align-items: center;
+}
+
+.social-icons-container i{
+    font-size: 32px;
 }
 
 
@@ -608,8 +635,12 @@ section{
         font-size: 24px;
     }
 
-    .cursor{
+    .cursor, .cursor span{
         visibility: hidden;
+    }
+
+    .header-img-container{
+        display: none;
     }
 
     .main-title{
@@ -620,6 +651,10 @@ section{
     .subtitle{
         margin-bottom: 20px;
         font-size: 16px;
+    }
+
+    .about-content{
+        padding-bottom: 30px;
     }
 
     .services-grid{
