@@ -603,6 +603,11 @@ section{
         border: 5px solid red;
     }*/
 
+    .title{
+        margin-bottom: 45px;
+        font-size: 24px;
+    }
+
     .cursor{
         visibility: hidden;
     }
